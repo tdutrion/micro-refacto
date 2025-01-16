@@ -16,12 +16,13 @@ for ($j = 0; $j < count($name_pdf); $j++) {
 var_dump('1-test-demo' === $nom); // true
 ```
 
-To test the existing code, use `./phpunit .` (considering at least php 7.4).
+To test the existing code, use `./phpunit .` (considering at least php 8.4).
 
 You can refactor `Script` and try again.
 
 To try it, run the following docker command from the current folder:
 
 ```
-docker run --rm -w /code -v $(pwd):/code php:7.4-cli-alpine ./phpunit .
+docker run --rm -w /code -v $(pwd):/code php:8.4-cli-alpine ./phpunit .
 ```
+
